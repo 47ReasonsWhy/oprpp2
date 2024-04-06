@@ -1,0 +1,4 @@
+Now let's try all the escapes!
+In the text we just have \\\\ as \\ and \\\{ as {".
+And in the tags we have:
+{$= "\\\\ as \\, \\\" as \", \\n as enter, \\t as tab, and \\r as CR." $}

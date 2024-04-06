@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { background-color: #{$= "background" "7F7F7F" @tparamGet $}; }
+        a { color: #0000FF; }
+        a:hover { color: #FFFF00; }
+        form { margin: 10px 0; }
+        input[type="text"], input[type="submit"], select { padding: 5px; }
+        input[type="submit"] { background-color: #0000FF; color: #FFFFFF; }
+        input[type="submit"]:hover { background-color: #FFFF00; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>SmartScript scripts</h2>
+    <a href="/scripts/osnovni.smscr">osnovni.smscr</a><br/>
+    <a href="/scripts/brojPoziva.smscr">brojPoziva.smscr</a><br/>
+    <a href="/scripts/fibonaccih.smscr">fibonaccih.smscr</a><br/>
+
+    <hr/>
+
+    <h2>Workers</h2>
+    <a href="/hello">HelloWorker</a><br/>
+    <a href="/cw">CircleWorker</a><br/>
+
+    <hr/>
+
+    <h2>Forms</h2>
+    <form action="/calc" method="get">
+        <input type="text" name="a" placeholder="a" required />
+        <input type="text" name="b" placeholder="b" required />
+        <input type="submit" value="Sum!" />
+    </form>
+    <br/>
+    <form action="/setbgcolor" method="get">
+        <select name="bgcolor">
+            <option value="000000">Black</option>
+            <option value="FFFFFF">White</option>
+            <option value="FF0000">Red</option>
+            <option value="00FF00">Lime</option>
+            <option value="0000FF">Blue</option>
+            <option value="FFFF00">Yellow</option>
+            <option value="00FFFF">Cyan</option>
+            <option value="FF00FF">Magenta</option>
+            <option value="C0C0C0">Silver</option>
+            <option value="808080">Gray</option>
+            <option value="800000">Maroon</option>
+            <option value="808000">Olive</option>
+            <option value="008000">Green</option>
+            <option value="800080">Purple</option>
+            <option value="008080">Teal</option>
+            <option value="000080">Navy</option>
+            <option value="FF8000">Orange</option>
+            <option value="FF0080">Pink</option>
+        </select>
+        <input type="submit" value="Set background color" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Let's loop!
+{$ FOR i 1 10 1 $}
+    {$=i$}
+    {$for i 1 10 $}
+        {$=i$}
+        {$FoR var 1.0 -34 "string" $}
+            {$=i$}
+            {$foR s1"s2"s3 $}
+                {$=i$}
+                {$FOR d3-2.01f $}
+                    {$=i$}
+                {$enD$}
+            {$End$}
+        {$EnD$}
+    {$eNd$}
+{$END$}

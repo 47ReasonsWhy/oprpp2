@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Echo parameters</title>
+</head>
+<body>
+    <h1><b>Zbrajanje</b></h1>
+    <table border="1" cellpadding="5">
+        <tbody>
+            <tr><td>{$= "a" $}</td><td>{$= "varA" 1 @tparamGet $}</td></tr>
+            <tr><td>{$= "b" $}</td><td>{$= "varB" 2 @tparamGet $}</td></tr>
+            <tr><td>{$= "a+b" $}</td><td>{$= "zbroj" 3 @tparamGet $}</td></tr>
+        </tbody>
+    </table>
+    <br/>
+    <hr/>
+    <br/>
+    <img src="{$= "imgName" "images/bubica.jpg" @tparamGet $}" alt="{$= "imgName" "images/bubica.jpg" @tparamGet $}" />
+</body>
+</html>
